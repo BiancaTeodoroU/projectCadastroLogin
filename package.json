@@ -1,7 +1,7 @@
 {
-  "name": "projectcadastrlogin",
+  "name": "project-lister-users",
   "version": "1.0.0",
-  "description": "## Tecnologias que serão utilizadas para o desenvolvimento",
+  "description": "Sistema de listagem de usuários",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
