@@ -8,4 +8,24 @@
 
 ### para iniciar o servidor usar o comando
 
-    nodemon app
+    npm run start
+
+### Criação da tabela do banco de dados
+
+    CREATE DATABASE crud;
+
+    use crud;
+
+    CREATE TABLE `users` (
+    `id` int(11) NOT NULL,
+    `name` varchar(150) NOT NULL,
+    `email` varchar(150) NOT NULL,
+    `pwd` varchar(25) NOT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+    ALTER TABLE `users`
+    ADD PRIMARY KEY (`id`);
+
+    ALTER TABLE `users`
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;

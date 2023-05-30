@@ -10,7 +10,7 @@ const connection=mysql.createConnection({
     user:'root',
     port: '3306',
     password:'bianca',
-    database:'node_crud'
+    database:'crud'
 });
 
 connection.connect(function(error){
@@ -44,7 +44,7 @@ app.get('/add',(req, res) => {
 });
 
 app.post('/save',(req, res) => { 
-    let data = {name: req.body.name, email: req.body.email, phone_no: req.body.phone_no};
+    let data = {name: req.body.name, email: req.body.email, pwd: req.body.pwd};
     let sql = "INSERT INTO users SET ?";
     let query = connection.query(sql, data,(err, results) => {
         if(err) throw err;
@@ -66,7 +66,7 @@ app.get('/edit/:userId',(req, res) => {
 
 app.post('/update',(req, res) => {
     const userId = req.body.id;
-    let sql = "update users SET name='"+req.body.name+"',  email='"+req.body.email+"',  phone_no='"+req.body.phone_no+"' where id ="+userId;
+    let sql = "update users SET name='"+req.body.name+"',  email='"+req.body.email+"',  pwd='"+req.body.pwd+"' where id ="+userId;
     let query = connection.query(sql,(err, results) => {
         if(err) throw err;
         res.redirect('/');

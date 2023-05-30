@@ -27,7 +27,7 @@
                     <tr>
                         <td style="color: white;"><%= user.name %></td>
                         <td style="color: white;"><%= user.email %></td>
-                        <td style="color: white;"><%= user.phone_no %></td>
+                        <td style="color: white;"><%= user.pwd %></td>
                         <td>
                             <a href="edit/<%= user.id %>" class="btn btn-sm btn-primary mr-3">Editar</a>
                             <a href="delete/<%= user.id %>" class="btn btn-sm btn-danger">Delete</a>
@@ -36,4 +36,6 @@
                 <% }); %>
             </tbody>
         </table>
+
+        
     </div>
