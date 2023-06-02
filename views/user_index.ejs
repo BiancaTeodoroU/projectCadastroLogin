@@ -4,33 +4,34 @@
     <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/style/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body style="background: #F6F1F1;">
+<body>
     <div class="container mt-4">
-        <h2 style="font-weight: 700; font-size: 32px; margin-bottom: 40px;"><%= title %></h2>
-        <a href="/add" style="background: #19376D; color: white; font-size: 16px; font-weight: 600;" class="btn btn-sm ">Adicionar Usuário</a><br/><br/>
-        <table style="background: #146C94;" class="table table-striped">
+        <h2 class="title"><%= title %></h2>
+        <a href="/add"><button class="btn btn-sm btn-success" type="button" data-cy="addUser">Adicionar Usuário</button></a><br/><br/>
+        <table class="table background-table table-striped">
             <thead>
             <tr>
-                <th style="color: white;">Nome</th>
-                <th style="color: white;">Email</th>
-                <th style="color: white;">Senha</th>
-                <th style="color: white;">Opções</th>
+                <th class="tr-color">Nome</th>
+                <th class="tr-color">Email</th>
+                <th class="tr-color">Senha</th>
+                <th class="tr-color">Opções</th>
             </tr>
             </thead>
             <tbody>
-                <% users.forEach(function(user){ %>
+                <% users.forEach(function(user, index){ %>
                     <tr>
-                        <td style="color: white;"><%= user.name %></td>
-                        <td style="color: white;"><%= user.email %></td>
-                        <td style="color: white;"><%= user.pwd %></td>
+                        <td class="tr-color"><%= user.name %></td>
+                        <td class="tr-color"><%= user.email %></td>
+                        <td class="tr-color"><%= user.pwd %></td>
                         <td>
-                            <a href="edit/<%= user.id %>" class="btn btn-sm btn-primary mr-3">Editar</a>
-                            <a href="delete/<%= user.id %>" class="btn btn-sm btn-danger">Delete</a>
+                            <a href="edit/<%= user.id%>" data-cy="edit-<%= index%>" class="btn btn-sm btn-primary mr-3">Editar</a>
+                            <a href="delete/<%= user.id %>" data-cy="delete-<%= index%>" class="btn btn-sm btn-danger">Delete</a>
                         </td>
                     </tr>
                 <% }); %>

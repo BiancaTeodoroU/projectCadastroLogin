@@ -4,131 +4,34 @@
     <title>Adicionar Usuário</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/style/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body style="background: #F6F1F1;">
+<body>
     <div class="container mt-4">
-        <h2 style="font-weight: 700; font-size: 32px; margin-bottom: 40px;"><%= title %></h2>
+        <h2 class="title"><%= title %></h2>
         <form action="/save" id="form" method="post">
             <div class="form-group">
-                <label style="color:#0A4D68;" for="name">Nome:</label>
+                <label class="style-label" for="name">Nome:</label>
                 <input type="text" class="form-control" id="username" placeholder="Preencha com um nome" name="name" required>
                 <span class="error"></span>
             </div>
             <div class="form-group">
-                <label style="color:#0A4D68;" for="email">Email:</label>
+                <label class="style-label" for="email">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="Preencha com um email" name="email" required>
                 <span class="error"></span>
             </div>
             <div class="form-group">
-                <label style="color:#0A4D68;" for="phone">Senha:</label>
-                <input type="text" class="form-control" id="pwd" placeholder="Preencha com uma senha" name="pwd" required>
+                <label class="style-label" for="pwd">Senha:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Preencha com uma senha" name="pwd" required>
                 <span class="error"></span>
             </div>
-            <button type="submit" style="background: red; color: white; font-weight: 600; font-size: 16px;" class="btn">Enviar</button>
+            <button type="submit" data-cy="enviar" class="btn btn-danger btn-style">Enviar</button>
         </form>
     </div>
-    <script>
-        const fields = document.querySelectorAll("[required]")
-
-        function ValidateField(field) {
-            // logica para verificar se existem erros
-            function verifyErrors() {
-                let foundError = false;
-
-                for(let error in field.validity) {
-                    // se não for customError
-                    // então verifica se tem erro
-                    if (field.validity[error] && !field.validity.valid ) {
-                        foundError = error
-                    }
-                }
-                return foundError;
-            }
-
-            function customMessage(typeError) {
-                const messages = {
-                    text: {
-                        valueMissing: "Nome é obrigatório",
-                        typeMismatch: "Por favor, preencha um nome válido"
-                    },
-                    email: {
-                        valueMissing: "Email é obrigatório",
-                        typeMismatch: "Por favor, preencha um email válido"
-                    },
-                    password: {
-                        valueMissing: "Senha é obrigatório",
-                        typeMismatch: "Por favor, preencha uma senha válida"
-                    }
-                }
-
-                return messages[field.type][typeError]
-            }
-
-            function setCustomMessage(message) {
-                const spanError = field.parentNode.querySelector("span.error")
-                
-                if (message) {
-                    spanError.classList.add("active")
-                    spanError.innerHTML = message
-                } else {
-                    spanError.classList.remove("active")
-                    spanError.innerHTML = ""
-                }
-            }
-
-            return function() {
-
-                const error = verifyErrors()
-
-                if(error) {
-                    const message = customMessage(error)
-
-                    field.style.borderColor = "red"
-                    setCustomMessage(message)
-                } else {
-                    field.style.borderColor = "green"
-                    setCustomMessage()
-                }
-            }
-        }
-
-
-        function customValidation(event) {
-
-            const field = event.target
-            const validation = ValidateField(field)
-
-            validation()
-
-        }
-
-        for( field of fields ){
-            field.addEventListener("invalid", event => { 
-                // eliminar o bubble
-                event.preventDefault()
-
-                customValidation(event)
-            })
-            field.addEventListener("blur", customValidation)
-        }
-    </script>
-    <style>
-        .input span.error {
-            display: flex;
-            padding: 0;
-            color: red;
-            background-color: rgba(255, 0, 0, 0.2);
-        }
-
-        .input span.error.active {
-            border: 1px solid red;
-            color: red;
-            padding: 0.4em;
-        }
-    </style>
+    <script src="static/script.js"></script>
 </body>
 </html>

@@ -5,30 +5,35 @@
     <title>Editar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/style/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body style="background: #F6F1F1;">
+<body>
     <div class="container mt-4">
-        <h2 style="font-weight: 700; font-size: 32px; margin-bottom: 40px;"><%= title %></h2>
+        <h2 class="title"><%= title %></h2>
         <form action="/update" method="post">
             <input type="hidden" value="<%= user.id %>" name="id">
             <div class="form-group">
-                <label style="color:#0A4D68;" for="name">Nome:</label>
+                <label class="style-label" for="name">Nome:</label>
                 <input type="text" class="form-control" id="email" placeholder="Preencha com um nome" value="<%= user.name %>" name="name" required>
+                <span class="error"></span>
             </div>
             <div class="form-group">
-                <label style="color:#0A4D68;" for="email">Email:</label>
+                <label class="style-label" for="email">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="Preencha com um email" value="<%= user.email %>" name="email" required>
+                <span class="error"></span>
             </div>
             <div class="form-group">
-                <label style="color:#0A4D68;" for="phone">Senha:</label>
-                <input type="text" class="form-control" id="pwd" placeholder="Preencha com uma senha" value="<%= user.pwd %>" name="pwd" required>
+                <label class="style-label" for="pwd">Senha:</label>
+                <input type="pwd" class="form-control" id="pwd" placeholder="Preencha com uma senha" value="<%= user.pwd %>" name="pwd" required>
+                <span class="error"></span>
             </div>
-            <button type="submit" style="background: red; color: white; font-weight: 600; font-size: 16px;" class="btn">editar</button>
+            <button type="submit" data-cy="editar" class="btn btn-success btn-style">editar</button>
         </form>
     </div>
+    <script src="../../static/script.js"></script>
 </body>
 </html>

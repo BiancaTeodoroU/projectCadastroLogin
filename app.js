@@ -18,6 +18,8 @@ connection.connect(function(error){
     else console.log('Database Conectado!');
 }); 
 
+app.use('/static', express.static('public'))
+
 //set views file
 app.set('views',path.join(__dirname,'views'));
 
