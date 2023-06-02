@@ -15,7 +15,7 @@
 
 #### e a segunda forma é baixando como um zip, só clicar em CODE e Download zip
 
-    ![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/5679cb23-96b0-4fd1-a3d8-cefc957b7235)
+![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/5679cb23-96b0-4fd1-a3d8-cefc957b7235)
 
 #### Após baixar o projeto rodar o comando
 
