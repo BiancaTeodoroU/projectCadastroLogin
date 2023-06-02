@@ -1,12 +1,17 @@
 # Sistema de listagem de usuários
 
-![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/8add75a1-17a4-44ee-a7b0-2bb988399f13)
+![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/a35e4073-44ea-4e6c-b3f6-84db69acff8b)
+![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/1cc8bcdd-5bf5-4453-9438-490cefdf6e55)
+![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/a401fb99-5425-4a18-bd7f-3aa9797dc1f3)
 
-#### Objetivo: Com esse novo projeto o usuário deve entrar direto na home, e nela terá um botão para adicionar novas informações de usuários detalhe que os campos terão a validação de que os campos não podem estar em branco o email tem que ter o @, quando adicionada a nova informação o usuário será redirecionado novamente para a home, e lá estara listado o usuário novo que foi cadastro, e será possivel editar ou excluir.
+### Descrição do ambiente de desenvolvimento utilizado;
+#### O ambiente de desenvolvimento utilizado foi usando o vsCode e NodeJs, ExpressJs que com ambos foi possivel criar um ambiente virtual e criação de rotas e visualização do front-end para a aplicação.
 
-#### O ambiente de desenvolvimento utilizado foi usando o NodeJs e ExpressJs que com ambos foi possivel criar um ambiente virtual e criação de rotas para a aplicação.
-#### As tecnologias utilizadas para essa aplicação serão: NodeJS, ExpressJS , MySQL, ejs, bootstrap, bodyParser e Cypress.
-#### Objetivo da aplicação: O objetivo é ter uma aplicação simples mas fácil de utilizar para o usuário final.
+### Especificação da linguagem de programação, frameworks e banco de dados utilizados;
+#### As tecnologias utilizadas para essa aplicação foram: NodeJS, ExpressJS , MySQL, ejs, bootstrap, bodyParser e Cypress.
+
+### Instruções sobre como instalar e executar a aplicação;
+### Requisitos de sistema para executar a aplicação;
 
 #### Como instalar o projeto
 #### Você pode usar 2 formas para instalar, a primeira com o git clone
@@ -52,20 +57,22 @@
 
     ALTER TABLE `users`
     MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+    
+### Informações sobre como contribuir para o projeto;
 
-#### 2) Ler a documentação do projeto
+#### 1- Ler a documentação do projeto
 #### O arquivo detalhará como funciona a contribuição para o projeto, explicando todas os procedimentos que você deverá seguir para fazer a sua contribuição.
 
-#### 3) Acessar a aba Issues
+#### 2- Acessar a aba Issues
 #### Procurar por alguma issue que já foi aberta e que não tem ninguém trabalhando ou abrir uma issue. A abertura de uma issue é uma sugestão no projeto e o manteiner do projeto irá avaliar se a sua sugestão é válida ou não. O manteiner aprovando, você estará apto para prosseguir.
 
-#### 4) Fork 
+#### 3- Fork 
 #### O próximo passo é realizar um fork do repositório do projeto no GitHub.
 
-#### 5) Clone
+#### 4- Clone
 #### Feito o fork do repositório, será criado um novo repositório no seu perfil do GitHub. Faça um git clone deste na sua máquina (seu ambiente local).
 
-#### 6) Adicionando um repositório remoto e atualizando seu repositório local em relação ao remoto
+#### 5- Adicionando um repositório remoto e atualizando seu repositório local em relação ao remoto
 #### Neste passo é preciso que você crie um novo repositório remoto (que será o repositório original do projeto).
     
     git remote add origin urlDoRepositórioDoProjeto
@@ -74,15 +81,22 @@
     
     git pull upstream main
 
-#### 7) Criar uma nova branch
+#### 6- Criar uma nova branch
 #### Feito isso, deve-se criar uma branch para que você possa fazer as alterações/criações de código necessárias
     
     git checkout -b novoBranch
 
-#### 8) Faça/modifique o código
-#### 9) Realizar Stage - Commit do seu trabalho
-#### 10) Open a pull request
+#### 7- Faça/modifique o código
+#### 8- Realizar Stage - Commit do seu trabalho
+#### 9- Open a pull request
 #### Abra pull request solicitando o merge da branch que você criou (novoBranch) ao repositório do projeto Open Source no qual deseja contribuir. Lembre-se de referenciar na pull request qual issue você está solucionando.
+
+### Descrição da aplicação de práticas de código limpo;
+![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/233a14da-79d6-4975-abd5-84fc8e064432)
+
+#### Primeiro eu separei, cada parte da aplicação estilização, e boas praticas no próprio código vou citar a parte do front, na criação das classes coloquei nomes mais genericos, e não especificos porque nesse caso, eu usei as mesmas classes em vários lugares, se fosse somente em um arquivo especifico eu colocaria nomes mais especificos, e boas práticas no geral, tentando não repetir muito css etc...
+
+### Identificação da criação de testes automatizados para a aplicação;
 
 #### Para ver os testes, após rodar os comandos citados acima, o cypress irá abrir sua interface gráfica que será assim
 
@@ -100,4 +114,6 @@
 
 ![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/9a4eee6c-b122-4a0d-9d4b-fc6a87da3f6c)
 
+#### Objetivo: Com esse novo projeto o usuário deve entrar direto na home, e nela terá um botão para adicionar novas informações de usuários detalhe que os campos terão a validação de que os campos não podem estar em branco o email tem que ter o @, quando adicionada a nova informação o usuário será redirecionado novamente para a home, e lá estara listado o usuário novo que foi cadastro, e será possivel editar ou excluir.
 
+#### Objetivo da aplicação: O objetivo é ter uma aplicação simples mas fácil de utilizar para o usuário final.
