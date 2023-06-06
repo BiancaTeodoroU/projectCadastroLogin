@@ -1,9 +1,5 @@
 # Sistema de listagem de usuários
 
-![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/a35e4073-44ea-4e6c-b3f6-84db69acff8b)
-![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/1cc8bcdd-5bf5-4453-9438-490cefdf6e55)
-![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/a401fb99-5425-4a18-bd7f-3aa9797dc1f3)
-
 ## Índice
 - [Sobre](#-sobre)
 - [Pré-requisitos](#-pré-requisitos)
@@ -136,3 +132,8 @@ const connection=mysql.createConnection({
     
 
 #### Objetivo da aplicação: O objetivo é ter uma aplicação simples mas fácil de utilizar para o usuário final.
+#### Imagens de como ficou visualmente
+![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/a35e4073-44ea-4e6c-b3f6-84db69acff8b)
+![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/1cc8bcdd-5bf5-4453-9438-490cefdf6e55)
+![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/a401fb99-5425-4a18-bd7f-3aa9797dc1f3)
+
