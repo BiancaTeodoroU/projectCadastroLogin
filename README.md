@@ -99,6 +99,7 @@ npm i
 ```
 
 ## 👩‍💻 Uso
+Adicionar as informações do seu banco no arquivo app.js
 
 ```js
 const connection=mysql.createConnection({
