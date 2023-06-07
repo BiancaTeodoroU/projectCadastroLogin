@@ -1,6 +1,8 @@
 # Sistema de listagem de usuários 📝
 
- **Índice**{: style="color: red; }
+Some Markdown text with <span style="color:blue">some *blue* text</span>.
+
+ ##Índice
 - [Sobre](#-sobre)
 - [Pré-requisitos](#-pré-requisitos)
 - [Instalação](#-instalação)
