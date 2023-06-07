@@ -6,7 +6,7 @@
 - [Instalação](#-instalação)
 - [Uso](#-uso)
 
-## $${\color{blue} 📄 Sobre}$$
+## $${\color{blue}Sobre 📄}$$
 Com esse projeto o usuário deve entrar direto na home, e nela terá um botão para adicionar novas informações de usuários detalhe que os campos terão a validação de que os campos não podem estar em branco o email tem que ter o @, quando adicionada a nova informação o usuário será redirecionado novamente para a home, e lá estara listado o usuário novo que foi cadastro, e será possivel editar ou excluir.
 
 ### Descrição do ambiente de desenvolvimento utilizado;
