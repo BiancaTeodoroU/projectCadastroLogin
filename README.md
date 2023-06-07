@@ -80,7 +80,7 @@ Primeiro eu separei, cada parte da aplicação estilização, e boas praticas no
 
 ![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/62515168-2bdf-48cb-a014-578d5e264674)
 
-#### Clicar em specs e pra ser mais rápido caso não apareça só esquecer front que irá aparecer o arquivo e pasta
+#### Clicar em specs e pra ser mais rápido caso não apareça só escrever front que irá aparecer o arquivo e pasta
 
 ![image](https://github.com/BiancaTeodoroU/projectListerUsers/assets/101062400/614c490a-9cc6-4be9-8b7c-4fd208a613c9)
 
