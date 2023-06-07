@@ -1,4 +1,4 @@
-# Sistema de listagem de usuários
+# Sistema de listagem de usuários 📝
 
 ## Índice
 - [Sobre](#-sobre)
