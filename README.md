@@ -7,7 +7,7 @@
 - [Uso](#-uso)
 
 ## Sobre 📄
-Com esse projeto o usuário deve entrar direto na home, e nela terá um botão para adicionar novas informações de usuários detalhe que os campos terão a validação de que os campos não podem estar em branco o email tem que ter o @, quando adicionada a nova informação o usuário será redirecionado novamente para a home, e lá estara listado o usuário novo que foi cadastro, e será possivel editar ou excluir.
+Com esse projeto o usuário deve entrar direto na home, e nela terá um botão para adicionar novas informações de usuários detalhe que os campos terão a validação de que os campos não podem estar em branco o email tem que ter o @, e não é possivel repetir o mesmo email, caso o usuário repetir será redirecionado para uma página avisando que não é possivel usar aquele email pois ele ja está cadastrado na base de dados, quando adicionada a nova informação o usuário será redirecionado novamente para a home, e lá estara listado o usuário novo que foi cadastro, e será possivel editar ou excluir.
 
 ### Descrição do ambiente de desenvolvimento utilizado;
 O ambiente de desenvolvimento utilizado foi usando o vsCode e NodeJs, ExpressJs que com ambos foi possivel criar um ambiente virtual e criação de rotas e visualização do front-end para a aplicação.
