@@ -1,0 +1,132 @@
+:root {
+    --bg: #1a1e2d;
+    --green: #a5ea9b;
+    --pink: #ff61d8;
+    --blue: #569cfa;
+    --orange: #ffcc81;
+    --cyan: #7ed1e2;
+    --red: ##FF0000;
+}
+
+body {
+    background: var(--bg);
+    display: flex;
+    place-content: center;
+    align-items: flex-end;
+    overflow-x: hidden!important;
+}
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-y) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container svg {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+}
+
+h2 {
+    color: white;
+    font-weight: 600;
+    margin: 8px 30px;
+}
+
+.button--error {
+    border: 3px solid white;
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2rem;
+    position: absolute;
+    right: 270px;
+}
+
+#bongo-cat {
+    fill: var(--bg);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4;
+}
+
+#bongo-cat .laptop-cover,
+#bongo-cat .headphone .band {
+    fill: none;
+}
+
+#bongo-cat .paw, #bongo-cat .head {
+    stroke: var(--orange);
+}
+
+#bongo-cat .laptop-keyboard {
+    stroke-width: 2;
+}
+
+#bongo-cat .terminal-code {
+    stroke-width: 5;
+}
+
+#bongo-cat .music .note,
+#bongo-cat .laptop-base,
+#bongo-cat .laptop-cover,
+#bongo-cat .paw .pads {
+    stroke: var(--pink);
+}
+
+#bongo-cat .table line,
+#bongo-cat .headphone .band,
+#bongo-cat .headphone .speaker path:nth-child(3) {
+    stroke: var(--green);
+}
+
+#bongo-cat .terminal-frame,
+#bongo-cat .laptop-keyboard,
+#bongo-cat .headphone .speaker path:nth-child(2) {
+    stroke: var(--blue);
+}
+
+#bongo-cat .terminal-code,
+#bongo-cat .headphone .speaker path:first-child {
+    stroke: var(--cyan);
+}
+
+/* mediaquerys */
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}

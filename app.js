@@ -47,10 +47,21 @@ app.get('/add',(req, res) => {
 
 app.post('/save',(req, res) => { 
     let data = {name: req.body.name, email: req.body.email, pwd: req.body.pwd};
-    let sql = "INSERT INTO users SET ?";
-    let query = connection.query(sql, data,(err, results) => {
+    let sql = `Select * from users where email = '${data.email}'`;
+    connection.query(sql,(err, result) => {
         if(err) throw err;
-        res.redirect('/');
+        console.log(result)
+        if(result.length > 0) {
+            res.render('user_error', {
+                title : 'Pagina de erro 📝'
+            });
+        } else {
+            let sqlInsert = "INSERT INTO users SET ?";
+            connection.query(sqlInsert, data,(err, results) => {
+                if(err) throw err;
+                res.redirect('/');
+            });        
+        }
     });
 });
 
