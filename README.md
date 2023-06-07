@@ -113,7 +113,8 @@ const connection=mysql.createConnection({
 
 ### Criação da tabela do banco de dados
 
-    CREATE DATABASE crud;
+```sql
+   CREATE DATABASE crud;
 
     use crud;
 
@@ -130,7 +131,7 @@ const connection=mysql.createConnection({
 
     ALTER TABLE `users`
     MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
-    
+```
 
 #### Objetivo da aplicação: O objetivo é ter uma aplicação simples mas fácil de utilizar para o usuário final.
 #### Imagens de como ficou visualmente
