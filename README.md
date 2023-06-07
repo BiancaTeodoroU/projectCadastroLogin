@@ -1,6 +1,6 @@
 # Sistema de listagem de usuários 📝
 
-## $${\color{blue} Índice}$$
+## Índice{: style="color: red; }
 - [Sobre](#-sobre)
 - [Pré-requisitos](#-pré-requisitos)
 - [Instalação](#-instalação)
